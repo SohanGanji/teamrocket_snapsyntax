@@ -1,14 +1,8 @@
-/* ========================
-   CSS VARIABLES
-   Change colors, fonts, and spacing here
-   ======================== */
 :root {
-  /* Brand Colors */
   --color-primary-red: #E9004C;
   --color-dark: #10181F;
   --color-grey: #D1D3D3;
   --color-blue-accent: #1A1AE6;
-  /* The dark navy/indigo used in hero elements */
   --color-white: #ffffff;
   --color-off-white: #F5F5F5;
   --color-light-bg: #E8E8E8;
@@ -18,20 +12,14 @@
   --color-border: #dddddd;
   --color-placeholder-bg: #d4d4d4;
 
-  /* Typography */
   --font-body: 'Source Sans 3', 'Source Sans Pro', sans-serif;
   --font-display: 'Rajdhani', 'Source Sans 3', sans-serif;
   --font-mono: 'Courier New', Courier, monospace;
-
-  /* Spacing */
   --nav-height: 70px;
   --section-padding: 80px 60px;
   --content-max-width: 1200px;
 }
 
-/* ========================
-   RESET & BASE
-   ======================== */
 *,
 *::before,
 *::after {
@@ -62,10 +50,6 @@ img {
   max-width: 100%;
 }
 
-/* ========================
-   NAV
-   Top navigation bar — modify height via --nav-height
-   ======================== */
 .nav {
   position: fixed;
   top: 0;
@@ -95,7 +79,6 @@ img {
   opacity: 0.5;
 }
 
-/* Logo box in nav center */
 .nav-logo {
   display: flex;
   align-items: center;
@@ -124,11 +107,6 @@ img {
   margin: 3px 0;
 }
 
-/* ========================
-   HERO SECTION
-   Main projects page hero with frame, image, and decorative elements
-   Modify padding here to adjust vertical spacing
-   ======================== */
 .projects-hero {
   position: relative;
   width: 100%;
@@ -142,7 +120,6 @@ img {
   padding-top: var(--nav-height);
 }
 
-/* Blue border frame in center */
 .hero-frame {
   position: absolute;
   top: 50%;
@@ -160,7 +137,6 @@ img {
   height: 100%;
 }
 
-/* Short horizontal line at top inside frame */
 .hero-frame-line {
   position: absolute;
   top: 30px;
@@ -170,7 +146,6 @@ img {
   background: var(--color-grey);
 }
 
-/* Decorative circle (right side of hero) */
 .hero-circle {
   position: absolute;
   top: 40%;
@@ -182,7 +157,6 @@ img {
   z-index: 6;
 }
 
-/* Project title text (overlaid left of frame) */
 .hero-project-title {
   position: absolute;
   left: 50%;
@@ -199,7 +173,6 @@ img {
   color: var(--color-text-body);
 }
 
-/* Load project label centered in frame */
 .hero-load-label {
   position: absolute;
   bottom: calc(50% - 240px);
@@ -211,7 +184,6 @@ img {
   color: var(--color-text-body);
 }
 
-/* Large faded number bottom left of frame */
 .hero-number {
   position: absolute;
   bottom: 18%;
@@ -223,7 +195,6 @@ img {
   z-index: 4;
 }
 
-/* Vertical rotated label on the right */
 .hero-side-label {
   position: absolute;
   right: 8%;
@@ -236,7 +207,6 @@ img {
   white-space: nowrap;
 }
 
-/* Hero background image placeholder (blue-tinted) */
 .hero-bg-placeholder {
   position: absolute;
   inset: 0;
@@ -245,7 +215,6 @@ img {
   align-items: center;
   justify-content: center;
   z-index: 1;
-  /* Simulate the blue duotone overlay */
   background: linear-gradient(135deg, rgba(26, 26, 230, 0.15) 0%, rgba(200, 200, 220, 0.5) 100%), #ddd;
 }
 
@@ -255,7 +224,6 @@ img {
   letter-spacing: 0.1em;
 }
 
-/* Bottom nav items */
 .hero-nav-bottom {
   position: absolute;
   bottom: 30px;
@@ -275,10 +243,6 @@ img {
   font-weight: 400;
 }
 
-/* ========================
-   PROJECT META SECTION
-   Role / Date / Status columns below hero
-   ======================== */
 .project-meta {
   padding: 80px 200px;
   background: var(--color-white);
@@ -308,7 +272,6 @@ img {
   color: var(--color-text-body);
 }
 
-/* Section label (used across multiple sections) */
 .section-label {
   font-size: 10px;
   letter-spacing: 0.2em;
@@ -321,7 +284,6 @@ img {
   text-align: center;
 }
 
-/* Body description text */
 .desc-body {
   font-family: var(--font-mono);
   font-size: 13px;
@@ -337,7 +299,6 @@ img {
   margin-right: auto;
 }
 
-/* Inline link style */
 .inline-link {
   color: var(--color-text-light);
   border-bottom: 1px solid var(--color-text-light);
@@ -349,10 +310,6 @@ img {
 
 .project-desc {}
 
-/* ========================
-   LOGO SECTION
-   Red and Dark panels side by side
-   ======================== */
 .logo-section {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -394,10 +351,6 @@ img {
   font-weight: 400;
 }
 
-/* ========================
-   BUSINESS CARDS 3D MOCKUP
-   Full-width image placeholder
-   ======================== */
 .mockup-section {
   width: 100%;
   padding: 0;
@@ -418,10 +371,6 @@ img {
   letter-spacing: 0.1em;
 }
 
-/* ========================
-   STATIONERY FLAT LAY
-   White background with product images
-   ======================== */
 .stationery-section {
   padding: 60px 120px;
   background: var(--color-white);
@@ -442,10 +391,6 @@ img {
   letter-spacing: 0.1em;
 }
 
-/* ========================
-   COLOR PALETTE SECTION
-   Color blocks with Pantone info
-   ======================== */
 .color-section {
   display: flex;
   flex-direction: column;
@@ -468,7 +413,6 @@ img {
   background: var(--color-grey);
 }
 
-/* Color info row */
 .color-info {
   display: flex;
   gap: 60px;
@@ -522,7 +466,6 @@ img {
   color: var(--color-text-body);
 }
 
-/* Swatch row at the bottom of each color block */
 .color-swatches {
   display: flex;
   margin-top: 40px;
@@ -539,10 +482,6 @@ img {
   height: 100%;
 }
 
-/* ========================
-   TYPOGRAPHY SECTION (Grey)
-   Azo Sans on white/grey
-   ======================== */
 .typography-section {
   padding: 80px 120px;
   background: var(--color-white);
@@ -572,7 +511,6 @@ img {
   color: rgba(255, 255, 255, 0.7);
 }
 
-/* Large display type */
 .type-display {
   font-size: 72px;
   font-weight: 400;
@@ -598,7 +536,6 @@ img {
   color: var(--color-white);
 }
 
-/* Character sets */
 .type-chars {
   font-size: 13px;
   color: var(--color-text-light);
@@ -611,19 +548,11 @@ img {
   color: rgba(255, 255, 255, 0.8);
 }
 
-/* ========================
-   TYPOGRAPHY SECTION 2 (Red)
-   Source Sans Pro on red
-   ======================== */
 .typography-section-red {
   padding: 0 120px 80px 120px;
   background: var(--color-white);
 }
 
-/* ========================
-   CONCEPT TEXT SECTION
-   Power, Speed and Simplicity
-   ======================== */
 .concept-section {
   padding: 80px 200px;
   background: var(--color-white);
@@ -634,16 +563,12 @@ img {
   margin: 0 auto;
 }
 
-/* ========================
-   DASHBOARD / iMAC MOCKUP
-   ======================== */
 .dashboard-section {
   padding: 80px 120px;
   background: var(--color-white);
   text-align: center;
 }
 
-/* iMac frame */
 .imac-mockup {
   margin-top: 60px;
   display: flex;
@@ -661,7 +586,6 @@ img {
   position: relative;
 }
 
-/* Mini dashboard inside iMac */
 .dashboard-ui {
   display: flex;
   height: 100%;
@@ -765,7 +689,6 @@ img {
   border-radius: 1px;
 }
 
-/* Post rows inside mini dashboard */
 .dash-posts {
   display: flex;
   flex-direction: column;
@@ -803,7 +726,6 @@ img {
   white-space: nowrap;
 }
 
-/* iMac stand */
 .imac-stand {
   display: flex;
   flex-direction: column;
@@ -824,10 +746,6 @@ img {
   border-radius: 6px;
 }
 
-/* ========================
-   FULL DASHBOARD SECTION
-   Full-width actual dashboard UI recreation
-   ======================== */
 .dashboard-full {
   display: flex;
   margin: 0 60px 60px 60px;
@@ -835,7 +753,6 @@ img {
   background: var(--color-light-bg);
 }
 
-/* Full sidebar */
 .dash-full-sidebar {
   width: 140px;
   background: var(--color-dark);
@@ -893,7 +810,6 @@ img {
   background: var(--color-primary-red);
 }
 
-/* Full dashboard main */
 .dash-full-main {
   flex: 1;
   padding: 24px;
@@ -1721,7 +1637,7 @@ img {
   .dashboard-full,
   .search-editor-section,
   .editor-section {
-    margin: 0 0 32px 0;
+    margin: 0 0 192px 0;
     flex-direction: column;
   }
 
